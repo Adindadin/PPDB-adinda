@@ -1,0 +1,118 @@
+/* Import Font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body.auth-page {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f0f2f5 0%, #e0e5ec 100%); /* Neutral Light Gray/Blue Gradient */
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3C/g%3E%3C/svg%3E"); /* Subtle dot texture */
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.auth-card .card-header, .auth-card .card-footer {
+    background-color: transparent;
+    border: none;
+}
+
+.auth-card .card-title {
+    font-weight: 700;
+    color: #333;
+}
+
+.auth-card .form-control {
+    border-radius: 10px;
+    padding: 12px 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
+}
+
+.auth-card .form-control:focus {
+    background-color: #fff;
+    border-color: #007bff; /* Neutral Blue focus border */
+    box-shadow: none;
+}
+
+.auth-card .btn {
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.auth-card .btn-primary {
+    background-color: #007bff; /* Neutral Blue Primary Button */
+    border-color: #007bff;
+}
+
+.auth-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.auth-card .btn-success {
+    background-color: #28a745; /* Standard Green Success Button */
+    border-color: #28a745;
+}
+
+.auth-card .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.auth-card a {
+    color: #007bff; /* Neutral Blue Link Color */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-card a:hover {
+    text-decoration: underline;
+}
+
+/* Untuk Halaman Index (Role Selection) */
+.bubble-text-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
+}
+
+.bubble-text-container h1 {
+    font-weight: 700;
+    color: #333;
+}
+
+.role-selection-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.role-selection-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.role-selection-card .icon {
+    font-size: 4rem;
+    color: #007bff; /* Neutral Blue Icon Color */
+}
